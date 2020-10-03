@@ -2,13 +2,13 @@
 Submission for MICCAI HACKATHON: https://miccai-hackathon.com/#participate
 
 ## REPRODUCIBILITY 1: WHAT DOES IT NEED FOR A MICCAI PAPER TO BE REPRODUCIBLE?
-- Create a machine learning reproducibility checklist specific for MICCAI.
-- Propose a machine learning code completeness checklist specific for MICCAI.
+- Create a machine learning reproducibility checklist specific to MICCAI papers.
+- Propose a machine learning code completeness checklist specific to MICCAI papers.
 - How to ensure reproducibility when the data cannot be shared?
 
 ## Reproducibility checklist for machine learning-based MICCAI papers
 
-The checklist builds on the [machine learning reproducibility checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf), but is specific for MICCAI papers.
+The checklist builds on the [machine learning reproducibility checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf), but is specific to MICCAI papers.
 We also got lots of insights from
 
 - Mongan, John, Linda Moy, and Charles E. Kahn Jr. "Checklist for Artificial Intelligence in Medical Imaging (CLAIM): A guide for authors and reviewers." Radiology: Artificial Intelligence (2020): e200029.
@@ -115,7 +115,7 @@ To train the model(s) in the paper, run this command:
 python train.py --input-data <path_to_data> --alpha 10 --beta 20
 ```
 
->📋  Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
+>📋  Describe how to train the models, with example commands, including the full training procedure and appropriate hyperparameters.
 
 
 
@@ -123,7 +123,7 @@ python train.py --input-data <path_to_data> --alpha 10 --beta 20
 
 You can download trained models here:
 
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on with the above dataset and code. 
+- [My awesome model](https://drive.google.com/mymodel.pth) trained on the above dataset with the above code. 
 
 >📋  Give a link to where/how the trained models can be downloaded.
 
@@ -137,7 +137,7 @@ To infer the testing cases, run this command:
 python inference.py --input-data <path_to_data> --model_path <path_to_trained_model> --output_path <path_to_output_data>
 ```
 
-> 📋  Describe how to infer the testing cases with the trained models.
+> 📋  Describe how to infer on testing cases with the trained models.
 
 
 
@@ -172,7 +172,7 @@ Our method achieves the following performance on :
 
 ## Acknowledgement
 
-> 📋  We thank the public dataset contributors. 
+> 📋  We thank the contributors of public datasets. 
 
 
 ## How to ensure reproducibility when the data cannot be shared?
