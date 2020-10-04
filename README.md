@@ -36,7 +36,7 @@ We also got lots of insights from
     - regristration method for multi-sequence/modality data
 - Training protocols
     - computing infrastructure
-    - patch size
+    - patch size and patch sampling strategy
     - batch size
     - optimizer, learning rate and its decay schedule 
     - loss function 
@@ -44,7 +44,7 @@ We also got lots of insights from
     - stopping criteria, and optimal model selection criteria
     - training time
 - Testing steps
-    - if using patch-based strategy, describing the overlap rate and aggregation method
+    - if using patch-based strategy, describing the patch sampling overlap rate and aggregation method
     - inference time
 - Postprocessing steps
 
@@ -177,7 +177,7 @@ Our method achieves the following performance on :
 
 ## How to ensure reproducibility when the data cannot be shared?
 
-- Try to find a related public dataset to evaluate your method, e.g., [The Cancer Imaging Archive](https://www.cancerimagingarchive.net/), [grand-challenge](https://grand-challenge.org/challenges/).
+- Try to find a related public dataset to evaluate your method, e.g., [The Cancer Imaging Archive](https://www.cancerimagingarchive.net/), [grand-challenge](https://grand-challenge.org/challenges/). If none of the public datasets can be used to evaluate your method, please explicitly claim it.
 
-- Create a docker container to pack the proposed method. Many MICCAI challenge have used the docker as the submission, e.g., [ADAM](http://adam.isi.uu.nl/methods/submit/), [M&Ms](https://www.ub.edu/mnms/)
+- Create a docker container to pack and share the proposed method. Many MICCAI challenges have used the docker as the submission, e.g., [ADAM](http://adam.isi.uu.nl/methods/submit/), [M&Ms](https://www.ub.edu/mnms/)
 
