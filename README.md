@@ -177,7 +177,7 @@ Our method achieves the following performance on :
 
 ## How to ensure reproducibility when the data cannot be shared?
 
-- Try to find a related public dataset to evaluate your method, e.g., [The Cancer Imaging Archive](https://www.cancerimagingarchive.net/), [grand-challenge](https://grand-challenge.org/challenges/). If none of the public datasets can be used to evaluate your method, please explicitly claim it.
+- Try to find a related public dataset to evaluate your method, e.g., [The Cancer Imaging Archive](https://www.cancerimagingarchive.net/), [grand-challenge](https://grand-challenge.org/challenges/). If none of the public datasets can be used to evaluate your method, please explicitly claim it, which is very helpful for communities to create task-driven public datasets.
 
 - Create a docker container to pack and share the proposed method. Many MICCAI challenges have used the docker as the submission, e.g., [ADAM](http://adam.isi.uu.nl/methods/submit/), [M&Ms](https://www.ub.edu/mnms/)
 
