@@ -16,8 +16,8 @@ Submission for [MICCAI HACKATHON]( https://miccai-hackathon.com/#participate)
 The checklist builds on the [machine learning reproducibility checklist](https://www.cs.mcgill.ca/~jpineau/ReproducibilityChecklist.pdf), but is specific to MICCAI papers.
 We also got lots of insights from
 
-- Mongan, John, Linda Moy, and Charles E. Kahn Jr. "Checklist for Artificial Intelligence in Medical Imaging (CLAIM): A guide for authors and reviewers." Radiology: Artificial Intelligence (2020): e200029.
-- Norgeot, Beau, Giorgio Quer, Brett K. Beaulieu-Jones, Ali Torkamani, Raquel Dias, Milena Gianfrancesco, Rima Arnaout et al. "Minimum information about clinical artificial intelligence modeling: the MI-CLAIM checklist." Nature Medicine 26, no. 9 (2020): 1320-1324
+- Mongan, J., Moy, L., & Kahn Jr, C. E. Checklist for Artificial Intelligence in Medical Imaging (CLAIM): A guide for authors and reviewers. Radiology: Artificial Intelligence, 2:2 (2020).
+- Norgeot, B., Quer, G., Beaulieu-Jones, B.K. et al. Minimum information about clinical artificial intelligence modeling: the MI-CLAIM checklist. Nature Medicine 26, 1320–1324 (2020).
 - Reproducibility Criteria in [ELNMP 2020](https://2020.emnlp.org/call-for-papers)
 
 ## Methods
