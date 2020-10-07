@@ -1,10 +1,6 @@
 # MICCAI-Reproducibility-Checklist
 Submission for [MICCAI HACKATHON]( https://miccai-hackathon.com/#participate)
 
-[TOC]
-
-
-
 **REPRODUCIBILITY 1: WHAT DOES IT NEED FOR A MICCAI PAPER TO BE REPRODUCIBLE?**
 
 1. Create a machine learning reproducibility checklist specific to MICCAI papers.
