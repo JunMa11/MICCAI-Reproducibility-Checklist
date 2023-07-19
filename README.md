@@ -66,11 +66,11 @@ We also got lots of insights from
 # 2. Code checklist for machine learning-based MICCAI papers
 >A template README.md for code accompanying a Machine Learning-based MICCAI paper, which is built on [paperswithcode/releasing-research-code](https://github.com/paperswithcode/releasing-research-code).
 >
->Dataset, preprocessing, posting processing sections are added because these parts are very important to reproduce the results in medical image analysis community.
+>Dataset, preprocessing, and posting processing sections are added because these parts are very important to reproduce the results in medical image analysis community.
 
 This repository is the official implementation of [My Paper Title](TBA). 
 
->Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
+>Optional: include a graphic explaining your approach/main result, bibtex entry, and link to demos, blog posts and tutorials
 
 ## Environments and Requirements
 
@@ -92,11 +92,11 @@ pip install -r requirements.txt
 ## Dataset
 
 - A link to download the data (if publicly available)
-- A description about how to prepare the data (e.g., folder structures)
+- A description of how to prepare the data (e.g., folder structures)
 
 ## Preprocessing
 
-A brief description of preprocessing method
+A brief description of the preprocessing method
 
 - cropping
 - intensity normalization
@@ -110,17 +110,13 @@ python preprocessing.py --input_path <path_to_input_data> --output_path <path_to
 
 ## Training
 
-To train the model(s) in the paper, run this command:
+1. To train the model(s) in the paper, run this command:
 
-```train
+```bash
 python train.py --input-data <path_to_data> --alpha 10 --beta 20
 ```
 
 >Describe how to train the models, with example commands, including the full training procedure and appropriate hyper-parameters.
-
-
-
-## Trained Models
 
 You can download trained models here:
 
@@ -129,18 +125,32 @@ You can download trained models here:
 >Give a link to where/how the trained models can be downloaded.
 
 
+2. To fine-tune the model on a customized dataset, run this command:
+
+```bash
+python finetune.py --input-data <path_to_data> --pre_trained_model_path <path to pre-trained model> --other_flags
+```
+
+3. [Colab](https://colab.research.google.com/) jupyter notebook
+
 
 ## Inference
 
-To infer the testing cases, run this command:
+1. To infer the testing cases, run this command:
 
 ```python
 python inference.py --input-data <path_to_data> --model_path <path_to_trained_model> --output_path <path_to_output_data>
 ```
 
-> Describe how to infer on testing cases with the trained models.
+> Describe how to infer testing cases with the trained models.
 
+2. [Colab](https://colab.research.google.com/) jupyter notebook
 
+3. Docker containers on [DockerHub](https://hub.docker.com/)
+
+```bash
+docker container run --gpus "device=0" -m 28G --name algorithm --rm -v $PWD/CellSeg_Test/:/workspace/inputs/ -v $PWD/algorithm_results/:/workspace/outputs/ algorithm:latest /bin/bash -c "sh predict.sh"
+```
 
 ## Evaluation
 
@@ -167,7 +177,7 @@ Our method achieves the following performance on [Brain Tumor Segmentation (BraT
 
 ## Contributing
 
->Pick a licence and describe how to contribute to your code repository. 
+>Pick a license and describe how to contribute to your code repository. 
 
 ## Acknowledgement
 
