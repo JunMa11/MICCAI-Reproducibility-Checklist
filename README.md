@@ -1,5 +1,8 @@
 # MICCAI-Reproducibility-Checklist
-Submission for [MICCAI HACKATHON]( https://miccai-hackathon.com/#participate)
+Best Contribution Award in [MICCAI HACKATHON]( https://miccai-hackathon.com/#participate). Joint work with [Jiannan Chen](https://github.com/GJiananChen)
+
+![b72196df50cf72595078f11b4a182c5](https://github.com/JunMa11/MICCAI-Reproducibility-Checklist/assets/19947331/af295a52-2651-46fd-a49c-bd882555d63e)
+
 
 **REPRODUCIBILITY 1: WHAT DOES IT NEED FOR A MICCAI PAPER TO BE REPRODUCIBLE?**
 
